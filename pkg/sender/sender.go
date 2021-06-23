@@ -40,6 +40,9 @@ func SetSdkClient(client *sdk.Client) {
 }
 
 func SendSingleMail(email string, title string, body string) string {
+	log.Println("email:"+email)
+	log.Println("title:"+title)
+	log.Println("email:"+body)
 
 	r := new(responser.Body)
 
