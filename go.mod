@@ -1,4 +1,4 @@
-module mail-server-test
+module mail-server
 
 go 1.16
 

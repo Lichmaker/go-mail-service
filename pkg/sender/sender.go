@@ -2,8 +2,8 @@ package sender
 
 import (
 	"log"
-	"mail-server-test/pkg/config"
-	"mail-server-test/pkg/responser"
+	"mail-server/pkg/config"
+	"mail-server/pkg/responser"
 	"net/http"
 
 	"github.com/aliyun/alibaba-cloud-sdk-go/sdk"

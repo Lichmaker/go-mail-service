@@ -3,7 +3,7 @@ package main
 import (
 	"io"
 	"log"
-	"mail-server-test/pkg/sender"
+	"mail-server/pkg/sender"
 	"net/http"
 
 	"github.com/gorilla/mux"
