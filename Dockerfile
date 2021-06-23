@@ -1,5 +1,5 @@
-FROM golang:1.16.5 as goBuilder
-
+FROM golang:1.16.5-alpine3.13 as goBuilder
+RUN apk add --no-cache bash
 RUN mkdir -p /mail-server
 WORKDIR /mail-server
 COPY . .
@@ -10,5 +10,5 @@ FROM alpine:latest
 RUN mkdir -p /mail-server
 WORKDIR /mail-server
 COPY --from=goBuilder /mail-server/mail-server .
-EXPOSE 3001
+COPY --from=goBuilder /mail-server/.env .
 ENTRYPOINT ["./mail-server"]
