@@ -1,4 +1,4 @@
-module mail-server
+module mail-service
 
 go 1.16
 

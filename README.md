@@ -29,8 +29,8 @@ go run main.go
 
 使用docker启动
 ```
-docker build -t lichmaker/go-mail-server .
-docker run --rm -p 3001:3001 -d lichmaker/go-mail-server --name="go-mail-server"
+docker build -t lichmaker/go-mail-service .
+docker run --rm -p 3001:3001 -d lichmaker/go-mail-service --name="go-mail-service"
 ```
 
 ## 调用
